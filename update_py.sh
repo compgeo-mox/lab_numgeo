@@ -1,3 +1,7 @@
+# full rebuild of the py3 conda environment: wipes it, clears the pip cache,
+# and reinstalls everything from scratch so pygeon/porepy (and all other deps)
+# are guaranteed to be re-fetched at their current git HEAD, not a cached copy
+
 # get the python version
 conda activate py3
 PYVER=$(conda run -n py3 python -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
