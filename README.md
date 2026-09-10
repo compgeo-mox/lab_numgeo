@@ -1,4 +1,4 @@
-![Pytest](https://github.com/compgeo-mox/lec_compgeo/actions/workflows/check.yml/badge.svg)
+![Pytest](https://github.com/compgeo-mox/lab_numgeo/actions/workflows/check.yml/badge.svg)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # NUMERICAL METHODS FOR THE GEOSCIENCES
@@ -83,7 +83,7 @@ By the end of the course and laboratory sessions, students will:
 ---
 
 ## Issues
-Create an [issue](https://github.com/compgeo-mox/lec_compgeo/issues).
+Create an [issue](https://github.com/compgeo-mox/lab_numgeo/issues).
 
 ## License
 See [license](./LICENSE.md).

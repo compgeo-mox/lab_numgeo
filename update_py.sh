@@ -21,5 +21,5 @@ conda activate py3
 
 conda install -y jupyter
 
-cd ~/lec_compgeo
+cd ~/lab_numgeo
 pip install -e .

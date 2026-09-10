@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 # Project information.
 [project]
-name = "lec_compgeo"
+name = "lab_numgeo"
 version = "0.1.0"
 description = "laboratory examples for the course Numerical Methods for the Geosciences"
 readme = "Readme.md"
@@ -16,7 +16,7 @@ maintainers = [
     { name = "Anna Scotti", email = "anna.scotti@polimi.com" },
     { name = "Alessio Fumagalli", email = "alessio.fumagalli@polimi.it" },
 ]
-urls = { "Homepage" = "https://github.com/compgeo-mox/lec_compgeo" }
+urls = { "Homepage" = "https://github.com/compgeo-mox/lab_numgeo" }
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
