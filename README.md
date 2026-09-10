@@ -47,6 +47,15 @@ Each lab includes:
 - Post-processing: computation of derived quantities (e.g., stress, flux) and export for visualization
 - Consistency checks and validation
 
+### Solved notebooks vs. assignments
+
+Inside each lab folder, every exercise `exN.ipynb` (for `N >= 2`) has a companion `exN_text.ipynb`. These two notebooks cover the same problem but serve different purposes:
+
+- **`exN.ipynb`** is the complete, worked solution — read it as a reference, or to check your own implementation once you are done.
+- **`exN_text.ipynb`** is your assignment: the same notebook with the key steps replaced by `__TODO__` placeholders. Fill them in and run the cells; an unfinished placeholder raises an immediate `NameError` pointing at exactly the line you still need to complete, and a "Consistency check" cell at the end confirms your result against a reference value once your implementation is correct.
+
+`ex1` in each lab has no `_text` version — it is meant to be worked through together in class rather than solved independently.
+
 ---
 
 ## Getting Started
@@ -64,9 +73,10 @@ pip install -e .
 ### Running the Laboratories
 
 1. Clone the repository and install dependencies as above.
-2. Open the desired lab notebook (e.g., `lab8/ex1.ipynb`) in Jupyter.
-3. Follow the instructions and run the cells sequentially.
-4. Use ParaView or similar tools to visualize exported `.vtu` files.
+2. Open the desired lab folder (e.g., `lab8/`) in Jupyter.
+3. Read through `ex1.ipynb` first — it introduces the lab's topic and is meant to be followed together.
+4. For each following exercise, open `exN_text.ipynb` and complete the `__TODO__` placeholders yourself; use `exN.ipynb` as the reference solution to check your work or when stuck.
+5. Use ParaView or similar tools to visualize exported `.vtu` files.
 
 ---
 
