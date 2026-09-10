@@ -1,25 +1,13 @@
-# full rebuild of the py3 conda environment: wipes it, clears the pip cache,
-# and reinstalls everything from scratch so pygeon/porepy (and all other deps)
-# are guaranteed to be re-fetched at their current git HEAD, not a cached copy
-
-# get the python version
-conda activate py3
-PYVER=$(conda run -n py3 python -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
-
-# deactivate the environments
-conda deactivate
-
-# remove py3, it will be recreated
-conda remove -y -n py3 --all
+# full refresh of the environment's Python packages: clears the pip cache and
+# force-reinstalls jupyter plus lab_numgeo (and therefore pygeon/porepy and
+# all other deps) so everything is re-fetched at its current version/git HEAD.
+# There is a single conda environment (base) in this container, so there is
+# nothing to remove/recreate -- packages are refreshed in place.
 
 # cleanup the cache
 rm -rf ~/.cache/pip
 
-# create again the environment installing everything from scratch
-conda create -y -n py3 python=$PYVER
-conda activate py3
-
-conda install -y jupyter
+conda install -y --force-reinstall jupyter
 
 cd ~/lab_numgeo
-pip install -e .
+pip install --force-reinstall -e .
