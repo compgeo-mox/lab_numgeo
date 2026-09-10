@@ -24,7 +24,7 @@ classifiers = [
     "Operating System :: OS Independent"
 ]
 dependencies = [
-    "pygeon[development,testing] @ git+https://github.com/compgeo-mox/pygeon.git@main"
+    "pygeon @ git+https://github.com/compgeo-mox/pygeon.git@main"
 ]
 
 # Information for the build system.

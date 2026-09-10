@@ -6,7 +6,7 @@
 conda activate py3
 
 pip install --force-reinstall --no-deps \
-    "pygeon[development,testing] @ git+https://github.com/compgeo-mox/pygeon.git@main" \
+    "pygeon @ git+https://github.com/compgeo-mox/pygeon.git@main" \
     "porepy[development,testing] @ git+https://github.com/pmgbergen/porepy.git@develop"
 
 conda deactivate
