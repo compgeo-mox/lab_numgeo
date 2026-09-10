@@ -45,6 +45,19 @@ Both implicit and explicit Euler schemes are implemented for time integration.
 
 ---
 
+## Solved notebooks vs. assignments
+
+From `ex2.ipynb` onward, every exercise has a companion `exN_text.ipynb`: the same notebook with the key steps replaced by `__TODO__` placeholders. Fill them in yourself and run the cells -- an unfinished placeholder raises an immediate `NameError` pointing at the line you still need to complete, and the "Consistency check" cell at the end confirms your result once it is correct. `exN.ipynb` is the full worked solution, useful as a reference or to check your own work. `ex1.ipynb` has no `_text` version, since it is meant to be worked through together.
+
+---
+
+## How to Use
+
+- Start with `ex1.ipynb` -- it introduces the lab's topic and is meant to be followed together.
+- For each following exercise, open `exN_text.ipynb` and fill in the `__TODO__` placeholders yourself; use `exN.ipynb` as the reference solution to check your work or when stuck.
+
+---
+
 ## General Workflow
 
 1. **Grid creation**  
