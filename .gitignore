@@ -79,6 +79,7 @@ $RECYCLE.BIN/
 *.msh
 *.geo
 *.geo_unrolled
+*.xao
 
 # Numpy native binary arrays
 *.npy
