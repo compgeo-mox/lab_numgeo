@@ -3,6 +3,9 @@
 # out of this. This workflow makes a trivial commit well within that
 # window, which resets the inactivity clock for the whole repo and keeps
 # the real schedule running even during months nobody touches this repo.
+#
+# Done with plain git rather than a third-party action, since this repo's
+# Actions settings block running actions outside the built-in/verified set.
 name: Keepalive Workflow
 
 on:
@@ -19,4 +22,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: gautamkrishnar/keepalive-workflow@v2
+
+      - name: Record a keepalive timestamp
+        run: |
+          mkdir -p .github
+          date -u +"Last keepalive run: %Y-%m-%dT%H:%M:%SZ" > .github/keepalive.txt
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/keepalive.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: keepalive commit to prevent scheduled workflows from being disabled"
+          git push
