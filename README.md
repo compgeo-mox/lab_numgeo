@@ -62,7 +62,7 @@ Inside each lab folder, every exercise `exN.ipynb` (for `N >= 2`) has a companio
 
 ### Installation for Linux
 
-The package requires Python >= 3.13
+The package requires Python >= 3.14
 
 Many functionalities depend on [PorePy](https://github.com/pmgbergen/porepy) and [PyGeoN](https://github.com/compgeo-mox/pygeon), so these packages will be installed.
 To install all the dependencies:
