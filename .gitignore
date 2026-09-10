@@ -80,6 +80,9 @@ $RECYCLE.BIN/
 *.geo
 *.geo_unrolled
 
+# Numpy native binary arrays
+*.npy
+
 # Paraview
 *.pvd
 *.vtu
